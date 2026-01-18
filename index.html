@@ -320,12 +320,20 @@
         }
         
         /* Contact Section */
-        .contact-section {
-            background: linear-gradient(135deg, var(--dark-color) 0%, #111827 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
+/* Contact Section - Only Change Made Here */
+.contact-section {
+    background: linear-gradient(135deg, var(--dark-color) 0%, #111827 100%);
+    position: relative;
+    overflow: hidden;
+    color: white; /* Added this line to make all text white */
+}
+
+.contact-section h5,
+.contact-section p,
+.contact-section small,
+.contact-section a {
+    color: white !important; /* Added this line to ensure all text is white */
+}        
         .contact-section::before {
             content: '';
             position: absolute;
