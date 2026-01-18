@@ -1,9 +1,295 @@
-<HTML>
-  <BODY>
-    <H1>Hi Ahmed</H1>
-    <H2>Hello Ahmed</H1>
-    <H3>Hello Ahmed</H1>
-    <H4>Hello Ahmed</H1>
-    <H5>Hello Ahmed</H1>
-  <BODY/>
-<HTML/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Ahmed | Odoo Developer</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: #d1d8e0;
+            margin-bottom: 2rem;
+        }
+        /* Section Styling */
+        .section-padding {
+            padding: 80px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+            color: #2c3e50;
+            text-transform: uppercase;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #7158e2;
+            margin: 15px auto 0;
+        }
+        /* Cards */
+        .experience-card {
+            border: none;
+            border-left: 5px solid #7158e2;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .experience-card:hover {
+            transform: translateY(-5px);
+        }
+        /* Skills Badges */
+        .skill-badge {
+            font-size: 1rem;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #f1f2f6;
+            color: #2c3e50;
+            border-radius: 50px;
+            display: inline-block;
+            font-weight: 500;
+        }
+        .skill-badge i {
+            margin-right: 8px;
+            color: #7158e2;
+        }
+        /* Contact Section */
+        .contact-section {
+            background-color: #2c3e50;
+            color: white;
+        }
+        .contact-box {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-box i {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #7158e2;
+        }
+        .btn-custom {
+            background-color: #7158e2;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn-custom:hover {
+            background-color: #5b46b6;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">M. Ahmed</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container">
+            <h1 class="hero-title">Muhammad Ahmed</h1>
+            <p class="hero-subtitle">Odoo Developer | Python Expert | CRM Specialist</p>
+            <p class="mb-4">Specializing in Odoo Customization, XML, OWL, and Business Automation</p>
+            <a href="#contact" class="btn-custom">Hire Me</a>
+            <a href="https://www.linkedin.com/in/muhammadahmed-330411180" target="_blank" class="btn btn-outline-light ms-2"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title text-start">About Me</h2>
+                    <p class="lead">I adapt business requirements into technical solutions.</p>
+                    <p>As a dedicated <strong>Odoo Developer</strong> based in Lahore, I focus on customizing and extending Odoo’s functionality to solve complex business problems. With a Master's in Computer Science and over 2 years of industry experience, I am passionate about implementing scalable software projects.</p>
+                    <p>My expertise spans across backend Python development, database management with PostgreSQL, and frontend customization using XML and OWL.</p>
+                    <a href="#contact" class="btn-custom mt-3">Contact Me</a>
+                </div>
+                <div class="col-lg-6 text-center mt-4 mt-lg-0">
+                    <!-- Placeholder for your image -->
+                    <img src="https://via.placeholder.com/400x400?text=Muhammad+Ahmed" alt="Muhammad Ahmed" class="img-fluid rounded-circle shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="text-center">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <h5 class="mb-3 text-muted">Core Development</h5>
+                        <div class="mb-4">
+                            <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+                            <span class="skill-badge"><i class="fas fa-cogs"></i> Odoo (v14-17)</span>
+                            <span class="skill-badge"><i class="fas fa-database"></i> PostgreSQL</span>
+                            <span class="skill-badge"><i class="fas fa-code"></i> XML / QWeb</span>
+                            <span class="skill-badge"><i class="fab fa-js"></i> OWL (Odoo Web Library)</span>
+                        </div>
+
+                        <h5 class="mb-3 text-muted">Web & Tools</h5>
+                        <div class="mb-4">
+                            <span class="skill-badge"><i class="fab fa-html5"></i> HTML5 & CSS3</span>
+                            <span class="skill-badge"><i class="fab fa-bootstrap"></i> Bootstrap</span>
+                            <span class="skill-badge"><i class="fab fa-wordpress"></i> WordPress</span>
+                            <span class="skill-badge"><i class="fab fa-php"></i> PHP</span>
+                            <span class="skill-badge"><i class="fas fa-bolt"></i> Zapier</span>
+                            <span class="skill-badge"><i class="fab fa-git-alt"></i> Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    
+                    <!-- Job 1 -->
+                    <div class="card experience-card mb-4 p-4">
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <h4 class="mb-0">Software Developer (Odoo)</h4>
+                            <span class="badge bg-primary align-self-center">Sept 2023 - Present</span>
+                        </div>
+                        <h5 class="text-muted mt-2">IBEES | Lahore, Pakistan</h5>
+                        <ul class="mt-3">
+                            <li>Leading software engineering tasks and Odoo module customization.</li>
+                            <li>Translating business requirements into Python/XML technical solutions.</li>
+                            <li>Working with OWL for frontend interface improvements.</li>
+                            <li>Managing PostgreSQL databases for optimal performance.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Job 2 -->
+                    <div class="card experience-card mb-4 p-4">
+                        <div class="d-flex justify-content-between flex-wrap">
+                            <h4 class="mb-0">CRM Developer</h4>
+                            <span class="badge bg-secondary align-self-center">June 2022 - Sept 2023</span>
+                        </div>
+                        <h5 class="text-muted mt-2">CrecenTech Systems Private Limited | Lahore, Pakistan</h5>
+                        <ul class="mt-3">
+                            <li>Developed and maintained CRM systems for international clients.</li>
+                            <li>Managed full-stack web development tasks using PHP and jQuery.</li>
+                            <li>Integrated automated workflows using Zapier.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section-padding bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Education</h2>
+            <h4>Master's in Computer Science</h4>
+            <p class="lead text-muted">The Islamia University of Bahawalpur</p>
+            <p>Feb 2017 - Feb 2021</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding contact-section">
+        <div class="container">
+            <h2 class="section-title text-white">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact-box">
+                        <i class="fas fa-phone"></i>
+                        <h5>Phone</h5>
+                        <p><a href="tel:03027777047" class="text-white text-decoration-none">0302-7777047</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <h5>Email</h5>
+                        <p><a href="mailto:ahmed.bwn09@gmail.com" class="text-white text-decoration-none">ahmed.bwn09@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h5>Location</h5>
+                        <p>Township, Lahore, Punjab, Pakistan</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <p>&copy; 2024 Muhammad Ahmed. All Rights Reserved.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Simple Script for Navbar closing on mobile click -->
+    <script>
+        const navLinks = document.querySelectorAll('.nav-item');
+        const menuToggle = document.getElementById('navbarNav');
+        const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { bsCollapse.hide() });
+        })
+    </script>
+</body>
+</html>
